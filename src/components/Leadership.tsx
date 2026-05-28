@@ -101,9 +101,9 @@ export const Leadership = () => {
           <div className="max-w-4xl mx-auto text-center">
             <h3 className="text-2xl font-bold mb-4">Philosophy</h3>
             <p className="text-lg leading-relaxed opacity-90">
-              "Great engineering leadership isn't just about technical decisions—it's about building systems and cultures 
+              &ldquo;Great engineering leadership isn&apos;t just about technical decisions—it&apos;s about building systems and cultures 
               that enable teams to deliver exceptional value while growing in their careers. The best technical solutions 
-              emerge when diverse perspectives collaborate within clear frameworks toward shared business outcomes."
+              emerge when diverse perspectives collaborate within clear frameworks toward shared business outcomes.&rdquo;
             </p>
           </div>
         </div>

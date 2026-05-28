@@ -1,7 +1,5 @@
 'use client';
 
-import Image from 'next/image';
-
 export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">

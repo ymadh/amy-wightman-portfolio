@@ -5,9 +5,9 @@ export const Contact = () => {
     <section id="contact" className="py-20 bg-gray-900 text-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Let's Connect</h2>
+          <h2 className="text-4xl font-bold mb-4">Let&apos;s Connect</h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            I'm always interested in discussing engineering leadership opportunities, 
+            I&apos;m always interested in discussing engineering leadership opportunities, 
             technical challenges, and how to build exceptional product organizations.
           </p>
         </div>
@@ -67,7 +67,7 @@ export const Contact = () => {
           </div>
 
           <div>
-            <h3 className="text-2xl font-bold mb-6">What I'm Looking For</h3>
+            <h3 className="text-2xl font-bold mb-6">What I&apos;m Looking For</h3>
             
             <div className="space-y-4">
               <div className="bg-gray-800 rounded-lg p-4">
