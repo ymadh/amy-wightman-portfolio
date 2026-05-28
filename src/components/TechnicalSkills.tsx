@@ -36,13 +36,13 @@ export const TechnicalSkills = () => {
       color: "bg-green-500"
     },
     {
-      category: "Modern Engineering",
+      category: "Entrepreneurship & Modern Engineering",
       skills: [
-        { name: "AI Integration", level: 85 },
-        { name: "DevOps & CI/CD", level: 80 },
-        { name: "Performance Optimization", level: 88 },
-        { name: "Security & Compliance", level: 82 },
-        { name: "Analytics & Experimentation", level: 78 }
+        { name: "Product Development (0-1)", level: 92 },
+        { name: "AI/ML Integration", level: 88 },
+        { name: "SaaS Architecture", level: 90 },
+        { name: "Business Model Design", level: 85 },
+        { name: "Go-to-Market Strategy", level: 80 }
       ],
       color: "bg-orange-500"
     }

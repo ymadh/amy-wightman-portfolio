@@ -27,7 +27,7 @@ export const Hero = () => {
                 25+ Person Division Leader
               </div>
               <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm">
-                AI Integration Expert
+                Founding Engineer - Vereda AI
               </div>
               <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm">
                 Revenue Impact Focus

@@ -3,6 +3,21 @@
 export const Projects = () => {
   const projects = [
     {
+      title: "Vereda AI",
+      type: "Founding Engineer & Technical Co-Founder",
+      description: "Founded and built an AI-powered engineering management platform that automates standups, 1:1 prep, and team health monitoring. Vera helps engineering managers scale their teams without adding overhead, serving as an AI assistant that proactively follows up on stalled work, missed check-ins, and potential burnout signals.",
+      highlights: [
+        "Full-stack development of SaaS platform with Slack, GitHub, and Jira integrations",
+        "Built AI-driven sentiment analysis and burnout detection algorithms", 
+        "Implemented freemium business model with $15/seat pricing for enterprise features",
+        "Created automated standup collection and 1:1 meeting preparation workflows",
+        "Designed scalable architecture serving engineering teams across multiple companies"
+      ],
+      technologies: ["React/Next.js", "Node.js", "AI/ML", "Slack API", "GitHub API", "Stripe", "PostgreSQL"],
+      impact: "Enables engineering managers to effectively lead larger teams by automating routine follow-ups and surfacing problems before they escalate",
+      live: "https://www.vereda.ai"
+    },
+    {
       title: "ADU Home Resource",
       type: "Product Development Leadership",
       description: "Led the development of a comprehensive platform for accessory dwelling unit (ADU) planning and construction, featuring state-specific regulations, cost calculators, and contractor directories.",
