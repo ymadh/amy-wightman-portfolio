@@ -1,89 +1,102 @@
 'use client';
 
 export const TechnicalSkills = () => {
-  const skillCategories = [
+  const coreStrengths = [
     {
-      category: "Leadership & Strategy",
-      skills: [
-        { name: "Engineering Management", level: 95 },
-        { name: "Technical Strategy", level: 92 },
-        { name: "Organizational Design", level: 90 },
-        { name: "Cross-functional Partnership", level: 93 },
-        { name: "Product Engineering", level: 88 }
-      ],
-      color: "bg-purple-500"
+      title: "Cross-System Synthesizer",
+      description: "Pulls from 5+ systems (Jira, GitHub, Slack, GCP, Confluence, code) and turns raw fragments into decisions in real time. Holds multiple threads without getting flustered.",
+      examples: ["Multi-repo dependency management", "Real-time technical decision making", "Complex integration orchestration"],
+      icon: "🔄"
     },
     {
-      category: "Frontend & Architecture", 
-      skills: [
-        { name: "React/Next.js", level: 85 },
-        { name: "TypeScript", level: 80 },
-        { name: "Micro-frontends", level: 88 },
-        { name: "Component Systems", level: 90 },
-        { name: "Mobile Development", level: 75 }
-      ],
-      color: "bg-blue-500"
+      title: "Convention Questioner Who Commits",
+      description: "Pushes back on technical decisions to verify reasoning, then commits cleanly once rationale is understood. Not contrarian for sport—validates that reasoning still holds.",
+      examples: ["Architecture review and validation", "Technical standard evaluation", "Process optimization"],
+      icon: "🤔"
     },
     {
-      category: "Backend & Platform",
-      skills: [
-        { name: "PHP/Symfony", level: 90 },
-        { name: ".NET Core", level: 85 },
-        { name: "API Design", level: 92 },
-        { name: "Platform Architecture", level: 88 },
-        { name: "Cloud Services", level: 80 }
-      ],
-      color: "bg-green-500"
+      title: "Leverage Builder",
+      description: "Doesn't just do the work—turns it into reusable assets. Instinctively scales own time through tooling, documentation, and process automation.",
+      examples: ["Internal developer tools", "Automation frameworks", "Knowledge scaling systems"],
+      icon: "⚡"
     },
     {
-      category: "Entrepreneurship & Modern Engineering",
-      skills: [
-        { name: "Agentic AI Development", level: 92 },
-        { name: "Product Development (0-1)", level: 90 },
-        { name: "LLM Integration & Orchestration", level: 88 },
-        { name: "SaaS Architecture", level: 90 },
-        { name: "Business Model Design", level: 85 }
-      ],
-      color: "bg-orange-500"
+      title: "Pragmatist with Verification Reflex",
+      description: "Bias to ship, but checks fresh data. Redirects to authoritative sources, questions approaches before adoption, asks 'is this actually used?' before accepting conventions.",
+      examples: ["Data-driven technical decisions", "Source of truth validation", "Evidence-based architecture"],
+      icon: "🎯"
+    },
+    {
+      title: "Parallel Ambiguity Navigator", 
+      description: "Handles multiple PRs across repos with deploy-order dependencies, keeps parallel workstreams moving without losing track of any.",
+      examples: ["Complex deployment orchestration", "Multi-team technical coordination", "Concurrent project management"],
+      icon: "🧭"
+    },
+    {
+      title: "Teacher Through Questioning",
+      description: "Pushes back on imprecision, demands evidence for claims. Coaches through questioning rather than just directing—builds understanding, not just compliance.",
+      examples: ["Technical mentoring", "Architectural reasoning", "Knowledge transfer"],
+      icon: "💡"
     }
+  ];
+
+  const technicalDomains = [
+    { area: "Agentic AI Development", depth: "Built production AI agents with autonomous decision-making" },
+    { area: "Full-Stack Engineering", depth: "React/Next.js, PHP/Symfony, .NET, mobile platforms" },
+    { area: "Platform Architecture", depth: "Micro-frontends, API design, distributed systems" },
+    { area: "DevOps & Integration", depth: "CI/CD, cloud platforms, multi-system orchestration" },
+    { area: "Product Development (0-1)", depth: "SaaS architecture, business model design, go-to-market" }
   ];
 
   return (
     <section id="skills" className="py-20 bg-gray-900 text-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Technical Skills</h2>
+          <h2 className="text-4xl font-bold mb-4">How I Work</h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            A comprehensive skill set spanning leadership, modern web technologies, and platform engineering, 
-            refined through years of hands-on experience and team leadership.
+            Core patterns and strengths developed through building complex systems and leading technical organizations at scale.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          {skillCategories.map((category, index) => (
-            <div key={index} className="bg-gray-800 rounded-xl p-6">
-              <h3 className="text-xl font-bold mb-6 text-center">{category.category}</h3>
-              <div className="space-y-4">
-                {category.skills.map((skill, skillIndex) => (
-                  <div key={skillIndex} className="space-y-2">
-                    <div className="flex justify-between items-center">
-                      <span className="font-medium">{skill.name}</span>
-                      <span className="text-sm text-gray-400">{skill.level}%</span>
-                    </div>
-                    <div className="w-full bg-gray-700 rounded-full h-2">
-                      <div 
-                        className={`h-2 rounded-full ${category.color} transition-all duration-1000 ease-out`}
-                        style={{ width: `${skill.level}%` }}
-                      ></div>
-                    </div>
-                  </div>
-                ))}
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
+          {coreStrengths.map((strength, index) => (
+            <div key={index} className="bg-gray-800 rounded-xl p-6 hover:bg-gray-750 transition-colors">
+              <div className="flex items-start gap-4 mb-4">
+                <span className="text-3xl">{strength.icon}</span>
+                <div>
+                  <h3 className="text-xl font-bold text-white mb-2">{strength.title}</h3>
+                  <p className="text-gray-300 text-sm leading-relaxed">
+                    {strength.description}
+                  </p>
+                </div>
+              </div>
+              <div className="mt-4">
+                <h4 className="text-sm font-semibold text-gray-400 mb-2">Applied In:</h4>
+                <div className="flex flex-wrap gap-2">
+                  {strength.examples.map((example, idx) => (
+                    <span key={idx} className="px-2 py-1 bg-gray-700 text-gray-300 rounded text-xs">
+                      {example}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="mt-16 grid md:grid-cols-3 gap-8 text-center">
+        <div className="bg-gray-800 rounded-xl p-8 mb-16">
+          <h3 className="text-2xl font-bold text-center mb-8">Technical Domains</h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {technicalDomains.map((domain, index) => (
+              <div key={index} className="text-center">
+                <h4 className="font-semibold text-blue-400 mb-2">{domain.area}</h4>
+                <p className="text-sm text-gray-300">{domain.depth}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8 text-center">
           <div className="bg-gray-800 rounded-xl p-6">
             <div className="text-3xl font-bold text-blue-400 mb-2">15+</div>
             <div className="text-lg font-semibold mb-2">Years Experience</div>
